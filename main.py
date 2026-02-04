@@ -79,8 +79,8 @@ if __name__ == "__main__":
         if currentDate == index:
             message = f'Здравствуйте. К практике приступил с 9:00 по 14:00, работаю над темой "{item}"'
             break
-        else:
-            message = "Здравствуйте. Сегодня продолжаю делать прошлую тему."
+    if len(message) == 0:
+        message = "Здравствуйте. Сегодня продолжаю делать прошлую тему."
     print(f"Message result: {message}")
     print(f"Current date to day: {currentDate}")
     print()
